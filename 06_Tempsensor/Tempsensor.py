@@ -7,17 +7,17 @@ und gibt ihn in °C und °F aus
 
 from machine import ADC
 
-# Internal temperature sensor is connected to ADC channel 4
+# Interner Temperatursensor ist mit ADC-Kanal 4 verbunden
 temp_sensor = ADC(4)
 
 def read_internal_temperature():
-    # Read the raw ADC value
+    # Lesen des ADC-Werts
     adc_value = temp_sensor.read_u16()
 
-    # Convert ADC value to voltage
+    # ADC-Wert in Spannung umwandeln
     voltage = adc_value * (3.3 / 65535.0)
 
-    # Temperature calculation based on sensor characteristics
+    # Temperaturberechnung auf Basis der Sensorcharakteristik
     temperature_celsius = 27 - (voltage - 0.706) / 0.001721
 
     return temperature_celsius
@@ -26,7 +26,7 @@ def celsius_to_fahrenheit(temp_celsius):
     temp_fahrenheit = temp_celsius * (9/5) + 32 
     return temp_fahrenheit
 
-# Reading and printing the internal temperature
+# Ablesen und Drucken der Innentemperatur
 temperature_c = read_internal_temperature()
 temperature_f = celsius_to_fahrenheit(temperature_c)
 print("InterneTemperatur:", temperature_c, "°C")
