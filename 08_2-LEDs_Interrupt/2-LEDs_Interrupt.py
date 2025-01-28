@@ -10,8 +10,6 @@ RLED1=220Ω
 RLED2=220Ω
 
 '''
-# 4.6.2 Unterschiedliche Blinkfrequenz
-# Complete project details at https://RandomNerdTutorials.com/raspberry-pi-pico-w-micropython-ebook/
 
 from machine import Pin, Timer
 from time import sleep
