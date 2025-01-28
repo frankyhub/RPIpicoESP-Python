@@ -11,8 +11,6 @@ RLED=220Ω
 
 '''
 
-# 4.6.4b 
-
 from machine import Pin, Timer
 import time
 
