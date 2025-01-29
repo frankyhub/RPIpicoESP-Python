@@ -49,6 +49,8 @@ def log_temperature(timer):
     # Schreibe  in die Datei
     file_path = 'temperatur_log.txt'
     try:
+        print("InterneTemperatur:", temperature_c, "°C")
+        print("Interne Temperatur:", temperature_f, "°F")
         file = open(file_path, 'a')
         file.write(temperature_string)
         print("Temperatur erfolgreich protokolliert.")
