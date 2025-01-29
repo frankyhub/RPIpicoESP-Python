@@ -37,7 +37,6 @@ print("Interne Temperatur:", temperature_f, "°F")
 
 from time import sleep
 from machine import Timer
-#from picozero import pico_temp_sensor
 
 def log_temperature(timer):
     # Lese den Wert des internen Temperatursensors ein
@@ -46,7 +45,7 @@ def log_temperature(timer):
     # Formatieren der Temperatur in eine Zeichenfolge mit zwei Dezimalstellen
     temperature_string = "{:.2f} °C\n".format(temperature_c)
 
-    # Schreibe  in die Datei
+    # Schreibe in die Datei
     file_path = 'temperatur_log.txt'
     try:
         print("InterneTemperatur:", temperature_c, "°C")
