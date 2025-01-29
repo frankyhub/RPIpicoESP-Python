@@ -1,4 +1,4 @@
-InterneTemperatur:InterneTemperatur:InterneTemperatur:22.83 °C
+InterneTemperatur:22.83 °C
 22.83 °C
 22.83 °C
 22.83 °C
