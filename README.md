@@ -1,4 +1,4 @@
-# RPIpico-Python
+# RPIpico-ESP-Python
 Micro Python mit dem  Raspberry Pi Pico/Pico W
 
 
