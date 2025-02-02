@@ -1,4 +1,4 @@
-# Complete project details at https://RandomNerdTutorials.com
+
 
 def sub_cb(topic, msg):
   print((topic, msg))
