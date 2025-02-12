@@ -5,6 +5,9 @@ Liest den BME280 aus
 und gibt ihn in auf dem OLED aus
 
 OLED
+https://www.ebay.de/itm/404313020839
+0.96" I2C IIC Serial 128X64 OLED LCD White LED Display Module For Arduino
+Lmu-Arduino
 SDA-> GPOI4
 SCL -> GPIO5
 GND -> GND
